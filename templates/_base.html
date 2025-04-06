@@ -21,19 +21,20 @@
                         </li>
                         {% if user.is_authenticated %}
                         <li class="nav-item">
-                            <form method="POST" action="{% url 'logout' %}">
+                            <a class="nav-link" href="{% url 'account_logout' %}">Log Out</a>
+                            <!-- <form method="POST" action="{% url 'account_logout' %}">
                                 {% csrf_token %}
                                 <button type="submit" class="btn btn-link nav-link" style="padding: 0; border: none; background: none;">
                                     Log Out
                                 </button>
-                            </form>
+                            </form> -->
                         </li>
                         {% else %}
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'login' %}">Log In</a>
+                            <a class="nav-link" href="{% url 'account_login' %}">Log In</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'signup' %}">Sign Up</a>
+                            <a class="nav-link" href="{% url 'account_signup' %}">Sign Up</a>
                         </li>
                         {% endif %}
                     </ul>

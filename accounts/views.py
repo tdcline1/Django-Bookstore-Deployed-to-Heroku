@@ -1,3 +1,4 @@
+# This whole file is now antiquated by allauth apps functionality
 from django.urls import reverse_lazy
 from django.views import generic
 
