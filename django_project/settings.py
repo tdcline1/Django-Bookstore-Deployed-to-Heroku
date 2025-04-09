@@ -29,7 +29,11 @@ SECRET_KEY = env("DJANGO_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DJANGO_DEBUG", default=False)
 
-ALLOWED_HOSTS = ["warm-sands-53281.herokuapp.com", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = [
+    "warm-sands-53281-999c329f4afb.herokuapp.com",
+    "localhost",
+    "127.0.0.1",
+]
 
 
 # Application definition
