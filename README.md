@@ -30,5 +30,3 @@ A fully-featured Django bookstore web application with custom user authenticatio
 - **Environment Variables:** `environs`
 
 ---
-
-## 🧰 Setup Instructions (Local)
